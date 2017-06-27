@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_v_270">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_v_170"
+                android:layout_alignParentBottom="true"
+                android:background="@color/part_divider"></LinearLayout>
+        </RelativeLayout>
+
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/video_icon"
+            android:layout_width="@dimen/space_v_270"
+            android:layout_height="@dimen/space_v_160"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_v_30"
+            android:padding="@dimen/space_v_2"
+            fresco:actualImageScaleType="centerCrop"
+            fresco:placeholderImage="@mipmap/default_750_450"
+            fresco:placeholderImageScaleType="fitCenter"
+            fresco:roundBottomLeft="true"
+            fresco:roundBottomRight="true"
+            fresco:roundTopLeft="true"
+            fresco:roundTopRight="true"
+            fresco:roundedCornerRadius="@dimen/space_v_10"/>
+
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/space_v_10"
+            android:layout_marginLeft="@dimen/space_v_60"
+            android:layout_toRightOf="@id/video_icon"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="请选择购买时间"
+            android:textColor="@color/text_color_1"
+            android:textSize="@dimen/textsize_28" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/space_v_50"
+            android:layout_above="@id/tv_time"
+            android:layout_marginLeft="@dimen/space_v_60"
+            android:layout_toRightOf="@id/video_icon"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="¥"
+                android:layout_marginTop="@dimen/space_v_4"
+                android:textColor="@color/text_color_orange"
+                android:textSize="@dimen/textsize_32"/>
+
+            <TextView
+                android:id="@+id/tv_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="150"
+                android:textColor="@color/text_color_orange"
+                android:textSize="@dimen/textsize_40" />
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/image_cancel"
+            android:layout_width="@dimen/space_v_40"
+            android:layout_height="@dimen/space_v_40"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/space_v_30"
+            android:layout_marginTop="@dimen/space_v_120"
+            android:src="@mipmap/cancel" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_v_400"
+        android:background="@color/part_divider"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/space_v_30"
+                android:layout_marginLeft="@dimen/space_v_30"
+                android:layout_marginRight="@dimen/space_v_30"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/lin_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_v_110"
+        android:background="@color/text_stoke"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_40" />
+</LinearLayout>

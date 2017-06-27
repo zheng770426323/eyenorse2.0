@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/part_divider">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_v_300"
+        android:layout_marginTop="@dimen/space_v_20"
+        android:layout_marginLeft="@dimen/space_v_20"
+        android:layout_marginRight="@dimen/space_v_20">
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/simpleDraweeView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            fresco:actualImageScaleType="centerCrop"
+            fresco:backgroundImage="@mipmap/default_750_250"
+            fresco:placeholderImage="@mipmap/default_750_250"
+            fresco:roundTopLeft="true"
+            fresco:roundTopRight="true"
+            fresco:roundBottomLeft="true"
+            fresco:roundBottomRight="true"
+            fresco:roundedCornerRadius="@dimen/space_v_20"/>
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/simpleDraweeView_bg"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_v_60"
+            android:layout_alignParentBottom="true"
+            fresco:actualImageScaleType="centerCrop"
+            fresco:placeholderImage="@mipmap/features_bg"
+            fresco:backgroundImage="@mipmap/features_bg"
+            fresco:roundTopLeft="true"
+            fresco:roundTopRight="true"
+            fresco:roundBottomLeft="true"
+            fresco:roundBottomRight="true"
+            fresco:roundedCornerRadius="@dimen/space_v_20"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/textsize_32"
+            android:textColor="@color/white"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/space_v_30"
+            android:layout_marginBottom="@dimen/space_v_10"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mcxtzhang.swipemenulib.SwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/space_v_120"
+    android:clickable="true"
+    android:paddingBottom="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_v_1"
+            android:background="@color/part_divider"></LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_v_120"
+            android:background="@color/white">
+
+
+                <LinearLayout
+                    android:id="@+id/rl"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_v_120"
+                    android:layout_marginRight="@dimen/space_v_30"
+                    android:background="@color/white"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/image_sel"
+                        android:layout_width="@dimen/space_v_30"
+                        android:layout_height="@dimen/space_v_30"
+                        android:layout_gravity="center_vertical"
+                        android:src="@mipmap/unselect" />
+
+                    <EditText
+                        android:id="@+id/et_number"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/space_v_10"
+                        android:background="@color/white"
+                        android:focusable="true"
+                        android:hint="请输入激活码"
+                        android:inputType="text"
+                        android:maxLength="13"
+                        android:textColor="@color/text_color_1"
+                        android:textSize="@dimen/textsize_30" />
+
+                    <TextView
+                        android:id="@+id/tv_edit_end"
+                        android:layout_width="@dimen/space_v_70"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentRight="true"
+                        android:gravity="center_vertical|right"
+                        android:text="完成"
+                        android:textColor="@color/search_bg"
+                        android:textSize="@dimen/textsize_30" />
+                </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_kongbai"
+                android:layout_width="@dimen/space_v_30"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:orientation="horizontal"></LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_del_end"
+        android:layout_width="@dimen/space_v_120"
+        android:layout_height="match_parent"
+        android:background="@color/search_bg"
+        android:gravity="center"
+        android:text="删除"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_30" />
+</com.mcxtzhang.swipemenulib.SwipeMenuLayout>

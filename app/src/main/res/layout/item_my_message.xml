@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/part_divider">
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_v_20"
+        android:text="03月03日"
+        android:textSize="@dimen/textsize_24"
+        android:textColor="@color/white"
+        android:paddingLeft="@dimen/space_v_20"
+        android:paddingRight="@dimen/space_v_20"
+        android:background="@drawable/message_time"
+        android:layout_gravity="center_horizontal"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_v_16"
+        android:layout_marginLeft="@dimen/space_v_20"
+        android:layout_marginRight="@dimen/space_v_20"
+        android:layout_marginBottom="@dimen/space_v_10"
+        android:background="@drawable/video_item_bg"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_v_24"
+            android:layout_marginLeft="@dimen/space_v_20"
+            android:layout_marginRight="@dimen/space_v_20"
+            android:text="经典"
+            android:textSize="@dimen/textsize_32"
+            android:textColor="@color/text_color_2"/>
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/simpleDraweeView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_v_250"
+            android:layout_marginLeft="@dimen/space_v_20"
+            android:layout_marginRight="@dimen/space_v_20"
+            android:layout_marginTop="@dimen/space_v_10"
+            android:layout_centerVertical="true"
+            android:visibility="visible"
+            fresco:actualImageScaleType="centerCrop"
+            fresco:backgroundImage="@mipmap/default_750_250"
+            />
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_v_20"
+            android:layout_marginRight="@dimen/space_v_20"
+            android:layout_marginTop="@dimen/space_v_20"
+            android:maxLines="2"
+            android:text=""
+            android:textColor="@color/text_hint1"
+            android:textSize="@dimen/textsize_26"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_v_20"
+            android:layout_marginTop="@dimen/space_v_20"
+            android:layout_marginBottom="@dimen/space_v_20"
+            android:layout_marginRight="@dimen/space_v_20">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看全文"
+            android:textSize="@dimen/textsize_30"
+            android:textColor="@color/text_color_2" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/arrow_right2"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

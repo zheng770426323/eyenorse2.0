@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/part_divider"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_top" />
+
+    <include layout="@layout/top_view" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/et_problem"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_v_380"
+            android:layout_marginLeft="@dimen/space_v_30"
+            android:layout_marginRight="@dimen/space_v_30"
+            android:layout_marginTop="@dimen/space_v_50"
+            android:background="@color/white"
+            android:gravity="top|left"
+            android:hint="请简单的描述您所遇到的问题和建议，还可添加QQ或微信账号与我们及时沟通哟~"
+            android:lineSpacingMultiplier="1.1"
+            android:padding="@dimen/space_v_30"
+            android:textColor="@color/text_color_1"
+            android:textSize="@dimen/textsize_32" />
+
+        <EditText
+            android:id="@+id/et_number"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_v_120"
+            android:layout_below="@id/et_problem"
+            android:layout_marginLeft="@dimen/space_v_30"
+            android:layout_marginRight="@dimen/space_v_30"
+            android:layout_marginTop="@dimen/space_v_50"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:hint="留下QQ、邮箱或电话"
+            android:lineSpacingMultiplier="1.1"
+            android:padding="@dimen/space_v_30"
+            android:textColor="@color/text_color_1"
+            android:textSize="@dimen/textsize_32" />
+        <TextView
+            android:id="@+id/tv_send"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_v_120"
+            android:layout_marginLeft="@dimen/space_v_30"
+            android:layout_marginRight="@dimen/space_v_30"
+            android:background="@drawable/login_no_password_bg"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/space_v_130"
+            android:text="发送"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_36"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+</LinearLayout>

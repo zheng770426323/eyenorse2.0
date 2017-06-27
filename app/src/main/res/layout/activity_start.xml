@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_start"
+    android:background="@color/white">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/textView_next"
+        android:layout_width="@dimen/space_v_570"
+        android:layout_height="@dimen/space_v_150"
+        android:text="立即体验"
+        android:gravity="center"
+        android:paddingBottom="@dimen/space_v_24"
+        android:paddingTop="@dimen/space_v_24"
+        android:paddingLeft="@dimen/space_v_60"
+        android:paddingRight="@dimen/space_v_60"
+        android:textSize="@dimen/textsize_40"
+        android:textColor="@color/little_white"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/space_v_100"
+        android:background="@drawable/start_start_button_bg"/>
+
+</RelativeLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/part_big_divider">
+
+    <include layout="@layout/head_top"/>
+    <include layout="@layout/top_view" />
+
+    <ImageView
+        android:layout_width="@dimen/space_v_210"
+        android:layout_height="@dimen/space_v_210"
+        android:layout_marginTop="@dimen/space_v_160"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/login_setok"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_v_70"
+        android:text="欢迎您成为眼护士会员，小二在此恭候多时！"
+        android:textSize="@dimen/textsize_24"
+        android:textColor="@color/text_color_1"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/textView_experience"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_v_120"
+        android:layout_marginTop="@dimen/space_v_120"
+        android:layout_marginLeft="@dimen/space_v_30"
+        android:layout_marginRight="@dimen/space_v_30"
+        android:gravity="center"
+        android:text="马上体验"
+        android:textSize="@dimen/textsize_32"
+        android:textColor="@color/white"
+        android:background="@drawable/login_confirm_bg"/>
+
+</LinearLayout>

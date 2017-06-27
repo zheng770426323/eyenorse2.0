@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/features_bg"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_top" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_v_20"
+            android:divider="@null"
+            android:scrollbars="none"></ListView>
+
+        <LinearLayout
+            android:id="@+id/image_back"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_v_90"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/ll_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/space_v_20"
+                    android:layout_height="@dimen/space_v_34"
+                    android:layout_marginLeft="@dimen/space_v_30"
+                    android:src="@mipmap/finish_white_icon" />
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="@dimen/textsize_32"
+                    android:textColor="@color/white"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_play"
+            android:layout_width="@dimen/space_v_150"
+            android:layout_height="@dimen/space_v_150"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/space_v_210"
+            android:layout_marginRight="@dimen/space_v_30"
+            android:src="@mipmap/videopaly_icon"
+            android:visibility="gone"></ImageView>
+    </RelativeLayout>
+</LinearLayout>

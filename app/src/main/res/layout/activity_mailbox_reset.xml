@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include layout="@layout/head_top"/>
+    <include layout="@layout/top_view"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_v_30"
+        android:layout_marginTop="@dimen/space_v_60"
+        android:text="请重新设置你的邮箱"
+        android:textColor="@color/text_color_orange"
+        android:textSize="@dimen/textsize_24" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_v_120"
+        android:layout_marginLeft="@dimen/space_v_30"
+        android:layout_marginRight="@dimen/space_v_30"
+        android:layout_marginTop="@dimen/space_v_20"
+        android:background="@drawable/login_edit_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edit_new_mailbox"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:hint="新的邮箱"
+            android:paddingLeft="@dimen/space_v_30"
+            android:textColor="@color/text_color_1"
+            android:textSize="@dimen/textsize_28" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_v_120"
+        android:layout_marginLeft="@dimen/space_v_30"
+        android:layout_marginRight="@dimen/space_v_30"
+        android:layout_marginTop="@dimen/space_v_50"
+        android:background="@drawable/login_confirm_bg"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_32" />
+
+
+</LinearLayout>

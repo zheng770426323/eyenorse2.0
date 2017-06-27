@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/part_divider">
+    <RelativeLayout
+        android:id="@+id/rl_none_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_v_280"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="@dimen/space_v_110"
+                android:layout_height="@dimen/space_v_150"
+                android:src="@mipmap/search_list_none"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_v_20"
+                android:text="尽力了，查找不到！！"
+                android:textSize="@dimen/textsize_30"
+                android:textColor="@color/text_hint1"
+                android:layout_gravity="center_vertical"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="大家都在看"
+        android:textColor="@color/text_color_2"
+        android:textSize="@dimen/textsize_30"
+        android:paddingLeft="@dimen/space_v_30"
+        android:paddingRight="@dimen/space_v_30"
+        android:paddingTop="@dimen/space_v_30"
+        android:background="@color/white"/>
+
+</LinearLayout>

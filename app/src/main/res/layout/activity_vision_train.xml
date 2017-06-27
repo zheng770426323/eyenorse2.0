@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/part_divider"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_top" />
+
+    <include layout="@layout/top_view" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/space_v_60"
+        android:text="短时视力提升标准测试片"
+        android:textColor="@color/text_color_1"
+        android:textSize="@dimen/textsize_32" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_v_30"
+        android:layout_marginRight="@dimen/space_v_30"
+        android:layout_marginTop="@dimen/space_v_40"
+        android:lineSpacingMultiplier="1.3"
+        android:text="本测试视频作为用户视力训练效果的检测标准；用户在激活并充值获得睫状肌锻炼权限以后，经过一段时间的规律训练，可以观看本视频检测视力，对比与之前的视力改善状况；由于用户平时受灯光、天气、身体状况、视觉神经兴奋程度等不同因素影响，本视频检测结果仅仅作为参考但并非绝对的标准；建议可多做几次检测，取现对稳定的数值结果。"
+        android:textColor="@color/text_hint1"
+        android:textSize="@dimen/textsize_28" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/space_v_70"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/space_v_50"
+            android:text="测试前的度数"
+            android:textColor="@color/text_color_1"
+            android:textSize="@dimen/textsize_32" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_v_120"
+            android:layout_marginLeft="@dimen/space_v_30"
+            android:layout_marginRight="@dimen/space_v_30"
+            android:layout_marginTop="@dimen/space_v_50"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/login_edit_bg"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/space_v_40"
+                    android:layout_height="@dimen/space_v_40"
+                    android:layout_marginLeft="@dimen/space_v_20"
+                    android:src="@mipmap/mine_left" />
+
+                <EditText
+                    android:id="@+id/edit_left"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="输入左眼度数"
+                    android:inputType="numberDecimal"
+                    android:maxLength="3"
+                    android:paddingLeft="@dimen/space_v_10"
+                    android:textColor="@color/text_color_1"
+                    android:textSize="@dimen/textsize_32" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/space_v_30"
+                android:layout_weight="1"
+                android:background="@drawable/login_edit_bg"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/space_v_40"
+                    android:layout_height="@dimen/space_v_40"
+                    android:layout_marginLeft="@dimen/space_v_20"
+                    android:src="@mipmap/mine_right" />
+
+                <EditText
+                    android:id="@+id/edit_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:hint="输入右眼度数"
+                    android:inputType="numberDecimal"
+                    android:maxLength="3"
+                    android:paddingLeft="@dimen/space_v_10"
+                    android:textColor="@color/text_color_1"
+                    android:textSize="@dimen/textsize_32" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_next"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_v_120"
+            android:layout_marginLeft="@dimen/space_v_30"
+            android:layout_marginRight="@dimen/space_v_30"
+            android:layout_marginTop="@dimen/space_v_50"
+            android:background="@drawable/login_confirm_bg"
+            android:gravity="center"
+            android:text="下一步"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_32" />
+    </LinearLayout>
+</LinearLayout>

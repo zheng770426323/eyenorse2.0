@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_v_100"
+        android:background="@mipmap/top_bg">
+
+        <LinearLayout
+            android:id="@+id/image_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/space_v_30"
+            android:paddingRight="@dimen/space_v_30">
+
+            <ImageView
+                android:layout_width="@dimen/space_v_20"
+                android:layout_height="@dimen/space_v_34"
+                android:src="@mipmap/finish_icon" />
+
+            <TextView
+                android:id="@+id/leftText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_v_8"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_32" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/centre_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/text_color_oldred"
+            android:textSize="@dimen/textsize_32" />
+        <TextView
+            android:id="@+id/tv_edit1"
+            android:layout_width="@dimen/space_v_100"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text=""
+            android:textSize="@dimen/textsize_28"
+            android:textColor="@color/text_color_1"/>
+    </RelativeLayout>
+</LinearLayout>

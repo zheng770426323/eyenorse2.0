@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="@dimen/space_v_110"
+        android:layout_height="@dimen/space_v_40"
+        android:layout_marginBottom="@dimen/space_v_4"
+        android:text=""
+        android:gravity="center"
+        android:textSize="@dimen/textsize_24"
+        android:textColor="@color/white"
+        android:background="@drawable/video_type_selected"/>
+</LinearLayout>

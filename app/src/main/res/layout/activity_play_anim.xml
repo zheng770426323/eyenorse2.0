@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black">
+    <include layout="@layout/head_top" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请将您的手机放入眼护士VR眼镜"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_32"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/space_v_180"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_below"
+        android:layout_width="@dimen/space_v_320"
+        android:layout_height="@dimen/space_v_420"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/space_v_250"
+        android:layout_marginTop="@dimen/space_v_270">
+        <ImageView
+            android:layout_width="@dimen/space_v_320"
+            android:layout_height="@dimen/space_v_250"
+            android:layout_alignParentBottom="true"
+            android:src="@mipmap/box_back"/>
+        <ImageView
+            android:id="@+id/iv_h"
+            android:layout_width="@dimen/space_v_160"
+            android:layout_height="@dimen/space_v_180"
+            android:layout_centerHorizontal="true"
+            android:visibility="invisible"
+            android:src="@mipmap/play_anim_h"/>
+        <ImageView
+            android:layout_width="@dimen/space_v_320"
+            android:layout_height="@dimen/space_v_250"
+            android:layout_alignParentBottom="true"
+            android:src="@mipmap/box_font"/>
+    </RelativeLayout>
+
+
+
+    <ImageView
+        android:id="@+id/iv_v"
+        android:layout_width="@dimen/space_v_80"
+        android:layout_height="@dimen/space_v_220"
+        android:layout_marginTop="@dimen/space_v_300"
+        android:src="@mipmap/play_anim_v"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

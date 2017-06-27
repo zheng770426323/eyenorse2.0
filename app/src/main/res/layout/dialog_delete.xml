@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/space_v_30"
+        android:text="删除后将无法找出订单号数据，是否确定删除。"
+        android:textSize="@dimen/textsize_24"
+        android:textColor="@color/text_color_1"
+        android:layout_gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_v_1"
+        android:background="@color/part_divider"
+        android:layout_marginTop="@dimen/space_v_30"></LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="确定删除"
+        android:textColor="@color/button_deliver_goods"
+        android:textSize="@dimen/textsize_28"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/space_v_30"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_v_10"
+        android:background="@color/part_divider"
+        android:layout_marginTop="@dimen/space_v_30"></LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="取消"
+        android:textSize="@dimen/textsize_28"
+        android:textColor="@color/text_color_2"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/space_v_30"
+        android:layout_marginBottom="@dimen/space_v_30"/>
+</LinearLayout>

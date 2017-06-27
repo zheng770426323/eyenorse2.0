@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mediacontroller_bg">
+
+    <LinearLayout
+        android:id="@+id/image_back"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/space_v_70"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/space_v_30"
+        android:paddingRight="@dimen/space_v_30">
+
+        <ImageView
+            android:layout_width="@dimen/space_v_20"
+            android:layout_height="@dimen/space_v_34"
+            android:src="@mipmap/finish_icon" />
+
+        <TextView
+            android:id="@+id/mediacontroller_file_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_v_30"
+            android:ellipsize="marquee"
+            android:paddingBottom="@dimen/space_v_6"
+            android:paddingTop="@dimen/space_v_6"
+            android:singleLine="true"
+            android:text="videoname"
+            android:textSize="@dimen/textsize_30" />
+    </LinearLayout>
+</RelativeLayout>

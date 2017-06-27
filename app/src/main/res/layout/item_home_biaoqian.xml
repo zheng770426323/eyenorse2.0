@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/simpleDraweeView"
+            android:layout_width="@dimen/space_v_350"
+            android:layout_height="@dimen/space_v_160"
+            android:layout_centerInParent="true"
+            fresco:actualImageScaleType="centerCrop"
+            fresco:backgroundImage="@mipmap/home_cate1"
+            fresco:placeholderImage="@mipmap/home_cate1"
+            fresco:roundBottomLeft="true"
+            fresco:roundBottomRight="true"
+            fresco:roundTopLeft="true"
+            fresco:roundTopRight="true"
+            fresco:roundedCornerRadius="@dimen/space_v_16" />
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/simpleDraweeView_bg"
+            android:layout_width="@dimen/space_v_350"
+            android:layout_height="@dimen/space_v_160"
+            android:layout_centerInParent="true"
+            fresco:backgroundImage="@mipmap/home_cate4_bg"
+            fresco:actualImageScaleType="centerCrop"
+            fresco:roundBottomLeft="true"
+            fresco:roundBottomRight="true"
+            fresco:roundTopLeft="true"
+            fresco:roundTopRight="true"
+            fresco:roundedCornerRadius="@dimen/space_v_16" />
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="牛津英语"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_32"/>
+    </RelativeLayout>
+</LinearLayout>

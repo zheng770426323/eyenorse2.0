@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_v_160"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/space_v_30"
+        android:paddingRight="@dimen/space_v_30">
+
+        <ImageView
+            android:id="@+id/image_icon"
+            android:layout_width="@dimen/space_v_200"
+            android:layout_height="@dimen/space_v_110"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/default_254_144" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/space_v_20"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_v_30"
+                android:text="太空风景眼动训练视频第一篇"
+                android:textColor="@color/text_color_1"
+                android:textSize="@dimen/textsize_24" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_v_38"
+                android:layout_marginTop="@dimen/space_v_40">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="@dimen/space_v_30"
+                        android:layout_height="@dimen/space_v_15"
+                        android:src="@mipmap/mine_looked" />
+
+                    <TextView
+                        android:id="@+id/textView_look_count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/space_v_8"
+                        android:text="13721次"
+                        android:textColor="@color/text_color_1"
+                        android:textSize="@dimen/textsize_24" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_surplus_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="剩余10天"
+                    android:textColor="@color/top_bg_color"
+                    android:textSize="@dimen/textsize_26" />
+
+                <TextView
+                    android:id="@+id/tv_renew"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:visibility="invisible"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/button_next_bg"
+                    android:paddingLeft="@dimen/space_v_16"
+                    android:paddingRight="@dimen/space_v_16"
+                    android:gravity="center"
+                    android:text="续费"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_28" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include layout="@layout/head_top"/>
+    <include layout="@layout/top_view"/>
+
+    <ImageView
+        android:layout_width="@dimen/space_v_160"
+        android:layout_height="@dimen/space_v_160"
+        android:layout_marginTop="@dimen/space_v_80"
+        android:layout_gravity="center_horizontal"
+        android:src="@mipmap/login_bind"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_v_90"
+        android:layout_marginLeft="@dimen/space_v_30"
+        android:layout_marginRight="@dimen/space_v_30"
+        android:layout_marginTop="@dimen/space_v_80"
+        android:background="@drawable/login_edit_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/space_v_34"
+            android:layout_height="@dimen/space_v_34"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/space_v_20"
+            android:src="@mipmap/phone_icon" />
+
+        <EditText
+            android:id="@+id/edit_phone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入11位手机号码"
+            android:inputType="phone"
+            android:paddingLeft="@dimen/space_v_12"
+            android:textColor="@color/text_color_1"
+            android:textSize="@dimen/textsize_28" />
+
+        <TextView
+            android:id="@+id/text_send_captcha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/space_v_20"
+            android:background="@drawable/captcha_enabled"
+            android:paddingBottom="@dimen/space_v_4"
+            android:paddingLeft="@dimen/space_v_10"
+            android:paddingRight="@dimen/space_v_10"
+            android:paddingTop="@dimen/space_v_4"
+            android:text="获取验证码"
+            android:textColor="@color/text_color_red"
+            android:textSize="@dimen/textsize_24" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_v_90"
+        android:layout_marginLeft="@dimen/space_v_30"
+        android:layout_marginRight="@dimen/space_v_30"
+        android:layout_marginTop="@dimen/space_v_30"
+        android:background="@drawable/login_edit_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/space_v_38"
+            android:layout_height="@dimen/space_v_38"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/space_v_20"
+            android:src="@mipmap/captcha_icon" />
+
+        <EditText
+            android:id="@+id/edit_captcha"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入6位短信验证码，15分钟内有效"
+            android:inputType="phone"
+            android:paddingLeft="@dimen/space_v_12"
+            android:textColor="@color/text_color_1"
+            android:textSize="@dimen/textsize_28" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_next"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_v_90"
+        android:layout_marginLeft="@dimen/space_v_30"
+        android:layout_marginRight="@dimen/space_v_30"
+        android:layout_marginTop="@dimen/space_v_50"
+        android:background="@drawable/button_next_bg"
+        android:gravity="center"
+        android:text="登录并绑定"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_32" />
+
+
+
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_top"/>
+    <include layout="@layout/top_view" />
+
+    <RelativeLayout
+        android:id="@+id/rl_image_bg"
+        android:layout_width="@dimen/space_v_150"
+        android:layout_height="@dimen/space_v_150"
+        android:layout_marginTop="@dimen/space_v_45"
+        android:layout_gravity="center_horizontal">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/simpleDraweeView_head_icon"
+            android:layout_width="@dimen/space_v_150"
+            android:layout_height="@dimen/space_v_150"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/register_touxiang"
+            fresco:actualImageScaleType="centerCrop"
+            fresco:roundAsCircle="true"
+            fresco:roundingBorderColor="@color/dark_line"
+            fresco:roundingBorderWidth="1dp"
+            fresco:placeholderImage="@mipmap/register_touxiang"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/space_v_8"
+        android:text="设置头像"
+        android:textColor="@color/text_hint"
+        android:textSize="@dimen/textsize_24" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_v_50"
+        android:layout_marginTop="@dimen/space_v_50"
+        android:text="给自己取一个响当当的昵称"
+        android:textColor="@color/text_color_1"
+        android:textSize="@dimen/textsize_24" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_v_120"
+        android:layout_marginLeft="@dimen/space_v_30"
+        android:layout_marginRight="@dimen/space_v_30"
+        android:layout_marginTop="@dimen/space_v_18"
+        android:background="@drawable/login_edit_bg"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edit_username"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:hint="支持中文、字母和数字，可为2-8个字"
+            android:maxLength="8"
+            android:paddingLeft="@dimen/space_v_20"
+            android:textColor="@color/text_color_1"
+            android:textSize="@dimen/textsize_28" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_v_120"
+        android:layout_marginLeft="@dimen/space_v_30"
+        android:layout_marginRight="@dimen/space_v_30"
+        android:layout_marginTop="@dimen/space_v_56"
+        android:background="@drawable/login_no_password_bg"
+        android:gravity="center"
+        android:maxLength="16"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_32" />
+
+</LinearLayout>

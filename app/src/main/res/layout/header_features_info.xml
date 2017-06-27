@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/features_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_play"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_v_500">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/simpleDraweeView_head_icon"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_v_440"
+            fresco:actualImageScaleType="centerCrop"
+            fresco:backgroundImage="@mipmap/default_254_144" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_v_70"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/space_v_60"
+            fresco:actualImageScaleType="centerCrop"
+            fresco:placeholderImage="@mipmap/features_bg"
+            fresco:backgroundImage="@mipmap/features_bg" />
+
+        <LinearLayout
+            android:id="@+id/ll_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="@dimen/space_v_70"
+            android:layout_marginLeft="@dimen/space_v_30">
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="经典漫画"
+                android:textSize="@dimen/textsize_26"
+                android:textColor="@color/white"/>
+            <ImageView
+                android:layout_width="@dimen/space_v_24"
+                android:layout_height="@dimen/space_v_12"
+                android:layout_marginLeft="@dimen/space_v_4"
+                android:src="@mipmap/features_title_icon"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ll_transparent"
+            android:layout_width="@dimen/space_v_150"
+            android:layout_height="@dimen/space_v_150"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/space_v_30"
+            android:src="@mipmap/videopaly_icon"></ImageView>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/space_v_30"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="简要介绍"
+                android:textSize="@dimen/textsize_32"
+                android:textColor="@color/text_color_2"/>
+            <ImageView
+                android:layout_width="@dimen/space_v_24"
+                android:layout_height="@dimen/space_v_28"
+                android:layout_marginLeft="@dimen/space_v_20"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/features_video_icon"/>
+            <TextView
+                android:id="@+id/tv_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10个视频"
+                android:layout_marginLeft="@dimen/space_v_6"
+                android:textSize="@dimen/textsize_24"
+                android:textColor="@color/text_hint1"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_v_30"
+        android:layout_marginRight="@dimen/space_v_30"
+        android:layout_marginTop="@dimen/space_v_20">
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="@dimen/textsize_28"
+            android:textColor="@color/text_color_1"
+            android:lineSpacingMultiplier="1.3"
+            android:lines="2"
+            android:ellipsize="end"/>
+
+        <LinearLayout
+            android:id="@+id/ll_content_more"
+            android:layout_width="@dimen/space_v_130"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/features_bg"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_zhankai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="展开"
+                android:textColor="@color/confirm_bg_color"
+                android:textSize="@dimen/textsize_28" />
+
+            <ImageView
+                android:id="@+id/iv_zhankai"
+                android:layout_width="@dimen/space_v_20"
+                android:layout_height="@dimen/space_v_20"
+                android:layout_marginLeft="@dimen/space_v_6"
+                android:src="@mipmap/content_more" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_v_1"
+        android:background="@color/part_divider"
+        android:layout_marginLeft="@dimen/space_v_30"
+        android:layout_marginRight="@dimen/space_v_30"
+        android:layout_marginTop="@dimen/space_v_15"></LinearLayout>
+</LinearLayout>

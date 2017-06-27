@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/image_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@mipmap/lunach_1334"/>
+
+    <LinearLayout
+        android:id="@+id/ll_start"
+        android:layout_width="@dimen/space_v_440"
+        android:layout_height="@dimen/space_v_100"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/space_v_100"
+        android:orientation="horizontal"
+        android:background="@color/transparent"></LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3S 跳过"
+        android:textColor="@color/little_white"
+        android:textSize="@dimen/textsize_24"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/space_v_50"
+        android:layout_marginRight="@dimen/space_v_50"/>
+
+
+</RelativeLayout>

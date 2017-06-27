@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/part_divider"
+    tools:context="com.eyenorse.fragment.HomeFragment">
+
+    <LinearLayout
+        android:id="@+id/ll_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_search"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_v_90"
+            android:background="@color/white"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/space_v_120"
+                android:layout_height="@dimen/space_v_38"
+                android:layout_centerInParent="true"
+                android:src="@mipmap/home_title" />
+
+            <ImageView
+                android:layout_width="@dimen/space_v_40"
+                android:layout_height="@dimen/space_v_40"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/space_v_30"
+                android:src="@mipmap/search_icon" />
+        </RelativeLayout>
+
+        <com.eyenorse.view.pullableview.PullToRefreshLayout
+            android:id="@+id/pullToRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/refresh_head" />
+
+            <com.eyenorse.view.pullableview.PullableScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <cn.bingoogolapple.bgabanner.BGABanner
+                        android:id="@+id/banner_home"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_v_350"
+                        app:banner_indicatorGravity="bottom|center_horizontal"
+                        app:banner_pageChangeDuration="5000"
+                        app:banner_pointAutoPlayAble="true"
+                        app:banner_pointContainerBackground="@color/transparent"
+                        app:banner_pointDrawable="@drawable/banner_dot_bg"
+                        app:banner_pointTopBottomMargin="5dp"
+                        app:banner_tipTextColor="@color/white"
+                        app:banner_tipTextSize="@dimen/textsize_30"
+                        app:banner_transitionEffect="defaultEffect" />
+
+                    <!--<com.eyenorse.view.AutoRollLayout
+                        android:id="@+id/rollLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_v_350"
+                        android:background="@color/white"></com.eyenorse.view.AutoRollLayout>-->
+
+                    <com.eyenorse.view.MyGridView
+                        android:id="@+id/gv_classify"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:padding="@dimen/space_v_30"
+                        android:verticalSpacing="@dimen/space_v_16"></com.eyenorse.view.MyGridView>
+
+                    <com.eyenorse.view.MyGridView
+                        android:id="@+id/gv_business"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:gravity="center"
+                        android:horizontalSpacing="@dimen/space_v_20"
+                        android:padding="@dimen/space_v_20"
+                        android:verticalSpacing="@dimen/space_v_16"></com.eyenorse.view.MyGridView>
+
+                   <!-- <RelativeLayout
+                        android:id="@+id/rl_zhuanti"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="bottom"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/space_v_30"
+                        android:paddingRight="@dimen/space_v_30"
+                        android:paddingTop="@dimen/space_v_40">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="商务视频合作"
+                            android:textColor="@color/text_color_1"
+                            android:textSize="@dimen/textsize_36" />
+
+                        <ImageView
+                            android:layout_width="@dimen/space_v_18"
+                            android:layout_height="@dimen/space_v_30"
+                            android:layout_alignParentRight="true"
+                            android:src="@mipmap/arrow_right" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_v_280">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_zhuanti"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingBottom="@dimen/space_v_20"
+                            android:paddingRight="@dimen/space_v_20"
+                            android:paddingTop="@dimen/space_v_20"></android.support.v7.widget.RecyclerView>
+
+                        <ImageView
+                            android:layout_width="@dimen/space_v_20"
+                            android:layout_height="match_parent"
+                            android:background="@color/part_divider" />
+                    </RelativeLayout>-->
+                    <ImageView
+                        android:id="@+id/iv_ceshi"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_v_300"
+                        android:layout_marginLeft="@dimen/space_v_20"
+                        android:layout_marginRight="@dimen/space_v_20"
+                        android:layout_marginTop="@dimen/space_v_20"
+                        android:background="@mipmap/home_middle_ceshi"/>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_no_free"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_v_40"
+                        android:gravity="bottom"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/space_v_30"
+                        android:paddingRight="@dimen/space_v_30">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="收费视频"
+                            android:textColor="@color/text_color_1"
+                            android:textSize="@dimen/textsize_36" />
+
+                        <ImageView
+                            android:layout_width="@dimen/space_v_18"
+                            android:layout_height="@dimen/space_v_30"
+                            android:layout_alignParentRight="true"
+                            android:src="@mipmap/arrow_right" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_free"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_v_470">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_free"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/space_v_20"
+                            android:layout_marginRight="@dimen/space_v_20"
+                            android:layout_marginTop="@dimen/space_v_20"></android.support.v7.widget.RecyclerView>
+
+                        <ImageView
+                            android:layout_width="@dimen/space_v_20"
+                            android:layout_height="match_parent"
+                            android:background="@color/part_divider"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_recommend"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_v_40"
+                        android:gravity="bottom"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/space_v_30"
+                        android:paddingRight="@dimen/space_v_30">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="热门推荐"
+                            android:textColor="@color/text_color_1"
+                            android:textSize="@dimen/textsize_36" />
+
+                        <ImageView
+                            android:layout_width="@dimen/space_v_18"
+                            android:layout_height="@dimen/space_v_30"
+                            android:layout_alignParentRight="true"
+                            android:src="@mipmap/arrow_right" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_v_470">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_recommend"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/space_v_20"
+                            android:layout_marginRight="@dimen/space_v_20"
+                            android:layout_marginTop="@dimen/space_v_20"></android.support.v7.widget.RecyclerView>
+
+                        <ImageView
+                            android:layout_width="@dimen/space_v_20"
+                            android:layout_height="match_parent"
+                            android:background="@color/part_divider"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_recent"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_v_40"
+                        android:gravity="bottom"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/space_v_30"
+                        android:paddingRight="@dimen/space_v_30">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="最新视频"
+                            android:textColor="@color/text_color_1"
+                            android:textSize="@dimen/textsize_36" />
+
+                        <ImageView
+                            android:layout_width="@dimen/space_v_18"
+                            android:layout_height="@dimen/space_v_30"
+                            android:layout_alignParentRight="true"
+                            android:src="@mipmap/arrow_right" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/space_v_470">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/rv_recent"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="@dimen/space_v_20"
+                            android:layout_marginRight="@dimen/space_v_20"
+                            android:layout_marginTop="@dimen/space_v_20"></android.support.v7.widget.RecyclerView>
+                        <ImageView
+                            android:layout_width="@dimen/space_v_20"
+                            android:layout_height="match_parent"
+                            android:background="@color/part_divider"/>
+                    </RelativeLayout>
+                </LinearLayout>
+                <!-- </ScrollView>-->
+            </com.eyenorse.view.pullableview.PullableScrollView>
+
+            <include layout="@layout/load_more" />
+        </com.eyenorse.view.pullableview.PullToRefreshLayout>
+    </LinearLayout>
+</RelativeLayout>

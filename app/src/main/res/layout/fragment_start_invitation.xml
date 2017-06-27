@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView_intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/part_divider"
+        android:lineSpacingExtra="@dimen/space_v_20"
+        android:paddingLeft="@dimen/space_v_30"
+        android:paddingRight="@dimen/space_v_30"
+        android:paddingTop="@dimen/space_v_40"
+        android:paddingBottom="@dimen/space_v_40"
+        android:text="眼护士-“每天给我一点时间 让你拥有清晰光明”
+专注和训练过后，你会发现，今天比昨天更明亮，如今比曾经更清晰，于美好时光中，于青春岁月里，我们的世界不再模糊，我们的护眼更加高效而科学"
+        android:textColor="@color/text_color_1"
+        android:textSize="@dimen/textsize_28" />
+
+    <RelativeLayout
+        android:layout_width="@dimen/space_v_330"
+        android:layout_height="@dimen/space_v_330"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/space_v_100">
+        <ImageView
+            android:id="@+id/image_qr_code"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/invitation_code_bg"
+            android:layout_margin="@dimen/space_v_20"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="我的二维码"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textsize_28" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_v_90"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/space_v_30"
+            android:layout_marginRight="@dimen/space_v_30"
+            android:background="@drawable/login_edit_bg">
+
+            <TextView
+                android:id="@+id/editView_input_website"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:hint=""
+                android:paddingLeft="@dimen/space_v_30"
+                android:paddingRight="@dimen/space_v_30"
+                android:singleLine="true"
+                android:textColor="@color/text_hint"
+                android:textSize="@dimen/textsize_28" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView_copy_start"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_v_120"
+            android:layout_marginLeft="@dimen/space_v_30"
+            android:layout_marginRight="@dimen/space_v_30"
+            android:layout_marginTop="@dimen/space_v_30"
+            android:background="@drawable/login_confirm_bg"
+            android:gravity="center"
+            android:text="复制链接，发起邀请"
+            android:textColor="@color/white"
+            android:textSize="@dimen/textsize_28" />
+
+    </LinearLayout>
+</LinearLayout>

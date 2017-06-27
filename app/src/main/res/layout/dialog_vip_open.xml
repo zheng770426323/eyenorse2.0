@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="@dimen/space_v_500"
+            android:layout_height="@dimen/space_v_80"
+            android:layout_gravity="center_horizontal"
+            android:background="@mipmap/dialog_bg">
+
+            <ImageView
+                android:id="@+id/textView_cancel"
+                android:layout_width="@dimen/space_v_45"
+                android:layout_height="@dimen/space_v_45"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/space_v_20"
+                android:src="@mipmap/dialog_cancel" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_v_70"
+            android:text=""
+            android:textSize="@dimen/textsize_36"
+            android:textColor="@color/text_color_1"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/textView_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_v_30"
+            android:text=""
+            android:textSize="@dimen/textsize_40"
+            android:textColor="@color/top_bg_color"
+            android:layout_gravity="center_horizontal"/>
+
+        <TextView
+            android:id="@+id/textView_affirm"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_v_90"
+            android:layout_marginTop="@dimen/space_v_50"
+            android:layout_marginLeft="@dimen/space_v_70"
+            android:layout_marginRight="@dimen/space_v_70"
+            android:layout_marginBottom="@dimen/space_v_60"
+            android:text=""
+            android:textSize="@dimen/textsize_36"
+            android:textColor="@color/white"
+            android:background="@drawable/button_next_bg"
+            android:gravity="center"/>
+    </LinearLayout>
+</LinearLayout>

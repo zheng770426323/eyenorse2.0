@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/part_divider"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_top" />
+
+    <include layout="@layout/top_view" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.eyenorse.view.pullableview.PullToRefreshLayout
+            android:id="@+id/pullToRefreshLayout_store_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/refresh_head" />
+
+            <com.eyenorse.view.pullableview.PullableListView
+                android:id="@+id/listView_message"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none"
+                android:divider="@null"></com.eyenorse.view.pullableview.PullableListView>
+
+            <include layout="@layout/load_more" />
+        </com.eyenorse.view.pullableview.PullToRefreshLayout>
+
+        <TextView
+            android:id="@+id/textView_null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text=""
+            android:textColor="@color/text_color_1"
+            android:textSize="@dimen/textsize_36" />
+    </RelativeLayout>
+
+</LinearLayout>

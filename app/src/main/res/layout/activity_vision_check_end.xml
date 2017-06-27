@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <include layout="@layout/head_top"/>
+    <include layout="@layout/top_view"/>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_v_400"
+        android:src="@mipmap/home_ceshi"
+        android:layout_marginTop="@dimen/space_v_60"
+        android:layout_gravity="center_horizontal"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="短时视力提升准测试，测试成功！"
+        android:textSize="@dimen/textsize_28"
+        android:layout_marginTop="@dimen/space_v_30"
+        android:layout_gravity="center_horizontal"/>
+
+    <TextView
+        android:id="@+id/textView_check"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_v_120"
+        android:layout_marginTop="@dimen/space_v_150"
+        android:layout_marginLeft="@dimen/space_v_30"
+        android:layout_marginRight="@dimen/space_v_30"
+        android:text="查看自检曲线图"
+        android:textSize="@dimen/textsize_32"
+        android:textColor="@color/white"
+        android:background="@drawable/login_confirm_bg"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/textView_continue"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_v_120"
+        android:layout_marginTop="@dimen/space_v_30"
+        android:layout_marginLeft="@dimen/space_v_30"
+        android:layout_marginRight="@dimen/space_v_30"
+        android:text="继续视力训练"
+        android:textSize="@dimen/textsize_32"
+        android:textColor="@color/white"
+        android:background="@drawable/button_next_bg"
+        android:gravity="center"/>
+
+</LinearLayout>

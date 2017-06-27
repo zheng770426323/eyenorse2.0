@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorLittleBlue">#66C6F6F9</color>
+    <color name="top_bg_color">#00A19C</color>
+    <color name="button_deliver_goods">#019691</color>
+    <color name="confirm_bg_color">#019691</color>
+    <color name="white">#ffffff</color>
+    <color name="little_white">#eaeaea</color>
+    <color name="transparent">#00000000</color>
+    <color name="transparent_20">#20000000</color>
+    <color name="transparent_half">#50000000</color>
+    <color name="gray">#aaaaaa</color>
+    <color name="part_big_divider">#FAFAFA</color>
+    <color name="part_divider">#EFEFEF</color>
+    <color name="text_stoke">#D9D9D9</color>
+    <color name="edit_stoke">#E4E4E4</color>
+    <color name="dark_line">#e2e2e2</color>
+    <color name="dark_line1">#C5C5C5</color>
+    <color name="message_time">#a6a6a6</color>
+    <color name="dark_line2">#bb333333</color>
+    <color name="text_color_1">#666666</color>
+    <color name="text_color_2">#333333</color>
+    <color name="text_color_orange">#FE7200</color>
+    <color name="order_payoff">#e05a00</color>
+    <color name="text_color_free_video">#e44237</color>
+    <color name="text_color_red">#FF4C68</color>
+    <color name="text_color_little_red">#66E05A00</color>
+    <color name="text_color_oldred">#B00000</color>
+    <color name="text_color_red2">#e60a0a</color>
+    <color name="text_hint">#808080</color>
+    <color name="text_hint1">#959595</color>
+    <color name="black">#000000</color>
+    <color name="features_bg">#f5ffff</color>
+    <color name="button_next_bg">#8DC81B</color>
+    <color name="text_color_green">#47AD20</color>
+    <color name="text_color_blue">#819BCF</color>
+    <color name="search_bg_1">#5500928D</color>
+    <color name="video_type_select">#338fff</color>
+    <color name="search_bg">#00928D</color>
+    <color name="dialog_white_bg">#fbfbfb</color>
+
+    <!--vitamio视频播放 -->
+
+    <color name="video_title_color">#ffffff</color>
+    <color name="video_bottom_color">#2ea18f</color>
+    <color name="video_red_color">#CC0000</color>
+    <color name="video_gray_color">#BFBFBF</color>
+
+    <!--二维码扫描-->
+    <color name="viewfinder_laser">#ffcc0000</color> <!-- Android standard ICS color -->
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="result_view">#b0000000</color>
+    <color name="possible_result_points">#c0ffbd21</color> <!-- Android standard ICS color -->
+    <color name="status_text">#ffffffff</color>
+</resources>

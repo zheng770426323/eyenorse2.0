@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/part_big_divider"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_top" />
+
+    <include layout="@layout/top_view" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/edit_activate_number"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_v_120"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/space_v_30"
+                android:layout_marginRight="@dimen/space_v_30"
+                android:layout_marginTop="@dimen/space_v_50"
+                android:background="@drawable/login_edit_bg"
+                android:hint="请输入激活卡上的卡号进行账户激活"
+                android:paddingLeft="@dimen/space_v_12"
+                android:paddingStart="@dimen/space_v_20"
+                android:textColor="@color/text_color_1"
+                android:textSize="@dimen/textsize_28" />
+
+            <EditText
+                android:id="@+id/edit_activate_password"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_v_120"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/space_v_30"
+                android:layout_marginRight="@dimen/space_v_30"
+                android:layout_marginTop="@dimen/space_v_20"
+                android:background="@drawable/login_edit_bg"
+                android:hint="请输入激活卡的密码"
+                android:inputType="text"
+                android:maxLength="16"
+                android:paddingLeft="@dimen/space_v_12"
+                android:paddingStart="@dimen/space_v_20"
+                android:textColor="@color/text_color_1"
+                android:textSize="@dimen/textsize_28" />
+
+            <TextView
+                android:id="@+id/textView_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_v_120"
+                android:layout_marginLeft="@dimen/space_v_30"
+                android:layout_marginRight="@dimen/space_v_30"
+                android:layout_marginTop="@dimen/space_v_30"
+                android:background="@drawable/login_confirm_bg"
+                android:gravity="center"
+                android:text="激活账号"
+                android:textColor="@color/white"
+                android:textSize="@dimen/textsize_32" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_v_50"
+                android:layout_marginTop="@dimen/space_v_30"
+                android:text="激活码获取渠道"
+                android:textColor="@color/text_color_1"
+                android:textSize="@dimen/textsize_28" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:lineSpacingMultiplier="1.4"
+                android:paddingLeft="@dimen/space_v_50"
+                android:paddingRight="@dimen/space_v_50"
+                android:paddingTop="@dimen/space_v_12"
+                android:text="眼护士研发的专业头盔作为眼护士唯一配套的官方授权设备，拥有科学的人机交互，并用环保材料生产，软硬件参数统一调配，用户在使用眼护士训练视力时，须购买官方指定的头盔并获得激活码，否则将弱化甚至无法达到眼护士的视力训练效果。每一个眼护士账号都有相应的激活码，用户在注册眼护士账号以后，购买官方指定头盔，官方将会根据眼护士注册账号，配送相对应的激活码和头盔一起发货，用户收到头盔后，在眼护士个人中心激活页面输入激活码，即可配套使用眼护士和头盔，请注意每个账户和对应的激活码都是唯一的，后续的用户福利活动会需要提供激活码，请好好保存。 购买头盔前，请用户先完成眼护士注册流程；完成注册的用户，请登录眼护士官方网站，在首页，点击“花样多彩任您选”各式头盔，扫码二维码，进入到任性点微信商城页面，用户拍下官方头盔。下单支付，客服和售后会跟进配送。"
+                android:textColor="@color/text_hint"
+                android:textSize="@dimen/textsize_24" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

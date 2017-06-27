@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_top" />
+
+    <include layout="@layout/top_view" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_play"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_v_500">
+
+                <com.facebook.drawee.view.SimpleDraweeView
+                    android:id="@+id/simpleDraweeView_head_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_v_440"
+                    fresco:actualImageScaleType="centerCrop"
+                    fresco:backgroundImage="@mipmap/default_254_144" />
+
+                <ImageView
+                    android:id="@+id/ll_transparent"
+                    android:layout_width="@dimen/space_v_150"
+                    android:layout_height="@dimen/space_v_150"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/space_v_30"
+                    android:src="@mipmap/videopaly_icon"></ImageView>
+            </RelativeLayout>
+            <!--<io.vov.vitamio.widget.VideoView
+                android:id="@+id/vv"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_v_440" />-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_v_30"
+                android:layout_marginRight="@dimen/space_v_30"
+                android:text="短时视力提升标准测试片"
+                android:textColor="@color/black"
+                android:textSize="@dimen/textsize_36"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_v_30"
+                android:layout_marginRight="@dimen/space_v_30"
+                android:layout_marginTop="@dimen/space_v_20"
+                android:text="1、检测视力，到 APP“我的”——“视力记录”里面记录自己左右眼的检测结果，例如左眼：0.6，右眼0.8（小数记录），或者左眼4.2，右眼4.3（五分记录）"
+                android:textColor="@color/text_hint1"
+                android:textSize="@dimen/textsize_30" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_v_30"
+                android:layout_marginRight="@dimen/space_v_30"
+                android:text="2、观看测试片"
+                android:textColor="@color/text_hint1"
+                android:textSize="@dimen/textsize_30" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_v_30"
+                android:layout_marginRight="@dimen/space_v_30"
+                android:text="3、检测观看测试片后的视力，并在下方输入检测结果。请注意记录方式与观看测试片前一致（统一小数记录或者统一五分记录）。"
+                android:textColor="@color/text_hint1"
+                android:textSize="@dimen/textsize_30" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/space_v_30"
+                    android:layout_marginTop="@dimen/space_v_40"
+                    android:text="录入测试后的度数"
+                    android:textColor="@color/text_color_2"
+                    android:textSize="@dimen/textsize_32" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_v_120"
+                    android:layout_marginLeft="@dimen/space_v_30"
+                    android:layout_marginRight="@dimen/space_v_30"
+                    android:layout_marginTop="@dimen/space_v_40"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/login_edit_bg"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/space_v_40"
+                            android:layout_height="@dimen/space_v_40"
+                            android:layout_marginLeft="@dimen/space_v_20"
+                            android:src="@mipmap/mine_left" />
+
+                        <EditText
+                            android:id="@+id/edit_left"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:hint="输入左眼度数"
+                            android:inputType="numberDecimal"
+                            android:maxLength="3"
+                            android:paddingLeft="@dimen/space_v_10"
+                            android:textColor="@color/text_color_1"
+                            android:textSize="@dimen/textsize_32" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/space_v_30"
+                        android:layout_weight="1"
+                        android:background="@drawable/login_edit_bg"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/space_v_40"
+                            android:layout_height="@dimen/space_v_40"
+                            android:layout_marginLeft="@dimen/space_v_20"
+                            android:src="@mipmap/mine_right" />
+
+                        <EditText
+                            android:id="@+id/edit_right"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@null"
+                            android:hint="输入右眼度数"
+                            android:inputType="numberDecimal"
+                            android:maxLength="3"
+                            android:paddingLeft="@dimen/space_v_10"
+                            android:textColor="@color/text_color_1"
+                            android:textSize="@dimen/textsize_32" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView_confirm"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_v_120"
+                    android:layout_marginLeft="@dimen/space_v_30"
+                    android:layout_marginRight="@dimen/space_v_30"
+                    android:layout_marginTop="@dimen/space_v_60"
+                    android:layout_marginBottom="@dimen/space_v_60"
+                    android:background="@drawable/login_confirm_bg"
+                    android:gravity="center"
+                    android:text="确定"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize_32" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

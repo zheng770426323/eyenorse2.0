@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/part_big_divider"
+    android:orientation="vertical">
+
+    <include layout="@layout/head_top" />
+    <include layout="@layout/top_view" />
+
+    <EditText
+        android:id="@+id/edit_activate_number"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_v_120"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/space_v_30"
+        android:layout_marginRight="@dimen/space_v_30"
+        android:layout_marginTop="@dimen/space_v_56"
+        android:background="@drawable/login_edit_bg"
+        android:hint="请输入代理激活码卡号进行激活"
+        android:paddingLeft="@dimen/space_v_12"
+        android:paddingStart="@dimen/space_v_20"
+        android:textColor="@color/text_color_1"
+        android:textSize="@dimen/textsize_28" />
+
+    <EditText
+        android:id="@+id/edit_activate_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_v_120"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/space_v_30"
+        android:layout_marginRight="@dimen/space_v_30"
+        android:layout_marginTop="@dimen/space_v_20"
+        android:background="@drawable/login_edit_bg"
+        android:hint="请输入代理激活码密码"
+        android:paddingLeft="@dimen/space_v_12"
+        android:paddingStart="@dimen/space_v_20"
+        android:maxLength="16"
+        android:inputType="text"
+        android:textColor="@color/text_color_1"
+        android:textSize="@dimen/textsize_28" />
+
+    <TextView
+        android:id="@+id/textView_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_v_120"
+        android:layout_marginLeft="@dimen/space_v_30"
+        android:layout_marginRight="@dimen/space_v_30"
+        android:layout_marginTop="@dimen/space_v_40"
+        android:background="@drawable/login_confirm_bg"
+        android:gravity="center"
+        android:text="激活账号"
+        android:textColor="@color/white"
+        android:textSize="@dimen/textsize_32" />
+
+</LinearLayout>
