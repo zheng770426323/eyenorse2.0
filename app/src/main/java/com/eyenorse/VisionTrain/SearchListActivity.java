@@ -66,7 +66,6 @@ public class SearchListActivity extends BaseActivity{
     private int lastVisiblePosition;
     private int count;
 
-
     public static void startActivity(Context context, int memberId, String token,String value){
         Intent intent = new Intent(context, SearchListActivity.class);
         intent.putExtra("memberId", memberId);
@@ -213,7 +212,6 @@ public class SearchListActivity extends BaseActivity{
             }
         },from+"","5","6");
     }
-
 
     private void initAdapter() {
         adapter = new SearchListAdapter(SearchListActivity.this,goodslist);
